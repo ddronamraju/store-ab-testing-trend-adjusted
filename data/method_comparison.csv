@@ -1,0 +1,4 @@
+Method,Treatment Effect ($),Percent Lift (%),Trend Adjustment,Controls for Pre-Trends,Bias Risk,Description
+Naive Pre-Post,"$39,986",33.51%,❌ No,❌ No,⚠️ HIGH,Simple pre-post comparison (treatment only)
+Segmentation DiD,"$16,377",13.14%,✓ Yes,✓ Yes (segments),✓ Low,"DiD within KMeans segments, weighted average"
+Matched DiD,"$17,907",15.26%,✓ Yes,✓ Yes (matching),✓ Low,DiD with nearest neighbor matched controls
