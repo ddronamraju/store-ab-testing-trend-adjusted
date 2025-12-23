@@ -1,0 +1,27 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                  sales   R-squared:                       0.128
+Model:                            OLS   Adj. R-squared:                  0.128
+Method:                 Least Squares   F-statistic:                     615.2
+Date:                Tue, 23 Dec 2025   Prob (F-statistic):               0.00
+Time:                        06:14:27   Log-Likelihood:            -1.8179e+05
+No. Observations:               15184   AIC:                         3.636e+05
+Df Residuals:                   15180   BIC:                         3.636e+05
+Df Model:                           3                                         
+Covariance Type:                  HC3                                         
+==================================================================================
+                     coef    std err          z      P>|z|      [0.025      0.975]
+----------------------------------------------------------------------------------
+Intercept       1.148e+05    397.314    288.892      0.000    1.14e+05    1.16e+05
+treatment       4198.2348    789.441      5.318      0.000    2650.959    5745.511
+post            2.048e+04    690.945     29.638      0.000    1.91e+04    2.18e+04
+treatment:post  1.778e+04   1491.602     11.917      0.000    1.49e+04    2.07e+04
+==============================================================================
+Omnibus:                     1280.283   Durbin-Watson:                   0.570
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             1975.125
+Skew:                           0.653   Prob(JB):                         0.00
+Kurtosis:                       4.189   Cond. No.                         6.37
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity robust (HC3)
