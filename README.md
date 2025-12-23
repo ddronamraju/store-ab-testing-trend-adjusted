@@ -28,6 +28,31 @@ This project implements and compares robust methods for estimating the causal ef
 - Computes DiD using a regression-based approach on matched data
 - **Use when:** You want maximum covariate balance and robust, standard errors/confidence intervals
 
+
+
+## Visualizations
+
+The analysis produces several key visualizations to support interpretation and communication:
+
+1. **Method Comparison Bar Chart:**
+  - Compares estimated treatment effects (percent lift) across all methods (Naive, Segmentation DiD, Matched DiD, Overall DiD).
+  - Highlights the impact of trend adjustment and methodological rigor.
+  - Saved as `reports/figures/method_comparison.png`.
+
+2. **Segments in Feature Space:**
+  - Visualizes store segments (Declining, Stable, Growing) in pairwise feature space using scatter plots.
+  - Helps interpret how clusters differ by pre-period slope, average sales, and volatility.
+  - Saved as `reports/figures/segment_feature_space.png`.
+
+3. **Covariate Balance Plots:**
+  - Show standardized mean differences (SMD) for key features before and after matching/segmentation.
+  - Demonstrate improved balance and overlap between treatment and control groups.
+
+4. **Parallel Trends Plots:**
+  - Visualize pre-period sales trends for treatment and control groups to assess the parallel trends assumption.
+
+All figures are saved in the `reports/figures/` directory and can be used in presentations or reports to communicate results and support best practices.
+
 ## Key Analysis Steps
 
 1. **Data Preparation:** Load and clean sales and feature data.
